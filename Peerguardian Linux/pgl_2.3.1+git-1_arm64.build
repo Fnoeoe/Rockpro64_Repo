@@ -1,0 +1,29 @@
+ dpkg-buildpackage -us -uc -ui -tc
+dpkg-buildpackage: info: source package pgl
+dpkg-buildpackage: info: source version 2.3.1+git-1
+dpkg-buildpackage: info: source distribution UNRELEASED
+dpkg-buildpackage: info: source changed by jre <jre-phoenix@users.sourceforge.net>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+ fakeroot debian/rules clean
+dh clean --with autoreconf
+   debian/rules override_dh_clean
+make[1]: Entering directory '/home/simon/peerguardian/peerguardian-code'
+# Just act if pglcmd package is built:
+# This will guarantee that PO files are always synced with templates.
+# This should be run on the "clean" target.
+debconf-updatepo --msgid-bugs-address=peerguardian-devel@lists.sourceforge.net
+# Remove the hardlinks from debian/ directory again. See above.
+# Also remove the created pglcmd.postinst
+rm -f debian/pglcmd.cron.daily \
+debian/pglcmd.if-up \
+debian/pglcmd.pgl.init \
+debian/pglcmd.logrotate \
+debian/pglcmd.postinst
+# Just act if pgld package is built:
+rm -f debian/pgld.logrotate
+dh_clean
+make[1]: Leaving directory '/home/simon/peerguardian/peerguardian-code'
+ dpkg-source -b .
+dpkg-source: error: can't build with source format '3.0 (quilt)': no upstream tarball found at ../pgl_2.3.1+git.orig.tar.{bz2,gz,lzma,xz}
+dpkg-buildpackage: error: dpkg-source -b . subprocess returned exit status 25

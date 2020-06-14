@@ -1,0 +1,42 @@
+Format: 1.8
+Date: Fri, 22 Jan 2016 03:33:16 +0100
+Source: pgl
+Binary: pglcmd pgld pgld-dbg pglgui pglgui-dbg
+Architecture: arm64
+Version: 2.3.1+git-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: PeerGuardian Linux Developers <peerguardian-devel@lists.sourceforge.net>
+Changed-By: jre <jre-phoenix@users.sourceforge.net>
+Description:
+ pglcmd     - PeerGuardian Linux - pglcmd
+ pgld       - PeerGuardian Linux - pgld
+ pgld-dbg   - PeerGuardian Linux - pgld (debug)
+ pglgui     - PeerGuardian Linux GUI - pglgui
+ pglgui-dbg - PeerGuardian Linux GUI - pglgui (debug)
+Changes:
+ pgl (2.3.1+git-1) UNRELEASED; urgency=medium
+ .
+   * We're working on some bigger changes in the git repo currently. Expect it
+     to break, do not use blindly.
+Checksums-Sha1:
+ cec36c60aea299e4d76474333e9c07bf6950b763 10435 pgl_2.3.1+git-1_arm64.buildinfo
+ 969c9745f76d12689c61830fc38516cdc8264dff 36288 pglcmd_2.3.1+git-1_arm64.deb
+ 9cdd17ca0c25f6e34de96586ec610e73e929b9b3 39500 pgld-dbg_2.3.1+git-1_arm64.deb
+ 301ad1b0839b8b32a88e9014ef93efc9727d1344 50280 pgld_2.3.1+git-1_arm64.deb
+ 070c39fab9a815d91a0f7b92e1cd0fe7a8e2b646 4508588 pglgui-dbg_2.3.1+git-1_arm64.deb
+ f1d7e4a35c5c17213ea6f9079a140ffbf20ab878 212996 pglgui_2.3.1+git-1_arm64.deb
+Checksums-Sha256:
+ e75f91b3fc4850997676108f37cd2f6c51744e7de8d7a5d01bdda0ee5f0c90f8 10435 pgl_2.3.1+git-1_arm64.buildinfo
+ e93d9c4ef7208f65bbc989560f3f3d390128e1372daa98e946b1dab1c9cb5ea9 36288 pglcmd_2.3.1+git-1_arm64.deb
+ 2bc8fe06df8e587e78c3866cc08ef8e62366c587639b38b21cd30c9ab7c171df 39500 pgld-dbg_2.3.1+git-1_arm64.deb
+ 23c098a4051775233c2a4caa80b53956eb5d697faee11d9b291109276a2a52c3 50280 pgld_2.3.1+git-1_arm64.deb
+ a6b2c7d23d84bae8cadd9b0a1ff93be9cccb35602507739e4f01145b8f783e16 4508588 pglgui-dbg_2.3.1+git-1_arm64.deb
+ 4c22aa60c7a1c22fd6b4399a2e2ed477f3a59c22ef873a4b6adde9d86bce1edd 212996 pglgui_2.3.1+git-1_arm64.deb
+Files:
+ e6420df49627228048ded0d3824c1347 10435 net optional pgl_2.3.1+git-1_arm64.buildinfo
+ e4528d1ebfa069910255c82ab894aceb 36288 net optional pglcmd_2.3.1+git-1_arm64.deb
+ 49d6457d55add9a538afe73f21f139d6 39500 debug extra pgld-dbg_2.3.1+git-1_arm64.deb
+ f873a2f8613bf916876def92263f56e2 50280 net optional pgld_2.3.1+git-1_arm64.deb
+ 8f7cded85a979409212eb1c8893d5892 4508588 debug extra pglgui-dbg_2.3.1+git-1_arm64.deb
+ e9970573db0cb33ed3ebeecb8dd7b1b7 212996 net optional pglgui_2.3.1+git-1_arm64.deb
